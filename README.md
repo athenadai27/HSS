@@ -2,7 +2,7 @@
 HSS Game Prot
 
 Overall Plan:
-Student has a list of 5 stats and alist of x Goals (will change over time as goals are met or not met). One will complete tasks that increase certain stats, to better complete certain goals.
+Student has a list of 5 stats and a list of x Goals (will change over time as goals are met or not met). One will complete tasks that increase certain stats, to better complete certain goals.
 
 Student Class:
 - Has a list of 5 stats that can be increased or decreased
