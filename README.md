@@ -19,6 +19,7 @@ Goals Class:
 - One single goal
 - Has a series of stat requirements that must be met
 - Has a hash number for easier finding
+- Has a previous goal pointer and a next goal pointer
 
 TO IMPLEMENT:
 - Overall goal tree (list of all goals)
