@@ -35,4 +35,4 @@ TO IMPLEMENT:
 
 QUESTIONS:
 - How do I most optimally implement all the information for the tree? How would I neatly initialise all the specific stat numbers, or the names?
-- How do I most optimally implement the hash numbers? I find it hard to hash when splitting across five trees (especially as the GoalsList class implements hash numbers on a tree-by-tree basis, as seen in line ~47)
+- How do I most optimally implement the hash numbers? I find it hard to hash when splitting across five trees (especially as the GoalsList class implements hash numbers on a tree-by-tree basis, as seen in line 50)
