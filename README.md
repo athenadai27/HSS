@@ -2,9 +2,9 @@
 HSS Game Prot
 
 CHANGES:
-Implemented overall "Game" function that initialises all others
-Actively established '5' as the "golden number"
-Began implementation of Goal Dictionary; split it into 5 separate binary trees, all handling different categories
+- Implemented overall "Game" function that initialises all others
+- Actively established '5' as the "golden number"
+- Began implementation of Goal Dictionary; split it into 5 separate binary trees, all handling different categories
 
 DESCRIPTIONS OF CLASSES:
 
