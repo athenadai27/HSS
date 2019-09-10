@@ -1,8 +1,12 @@
 # HSS
 HSS Game Prot
 
-Overall Plan:
-Student has a list of 5 stats and a list of x Goals (will change over time as goals are met or not met). One will complete tasks that increase certain stats, to better complete certain goals.
+CHANGES:
+Implemented overall "Game" function that initialises all others
+Actively established '5' as the "golden number"
+Began implementation of Goal Dictionary; split it into 5 separate binary trees, all handling different categories
+
+DESCRIPTIONS OF CLASSES:
 
 Student Class:
 - Has a list of 5 stats that can be increased or decreased
@@ -15,18 +19,20 @@ StatList Class:
 GoalsList Class:
 - Contains a list of goals
 
-Goals Class:
+Goal Class:
 - One single goal
 - Has a series of stat requirements that must be met
 - Has a hash number for easier finding
 - Has a previous goal pointer and a next goal pointer
+
+GoalsDictionary Class:
+- Contains a pointer to the main character
+- Contains a pointer to the goal dictionary
 
 TO IMPLEMENT:
 - Overall goal tree (list of all goals)
 - Win clause (what makes the player win?)
 
 QUESTIONS:
-- Is the current setup the most optimal?
-    - Can/should the Goals class be a subclass/struct of GoalsList (much like how StatList was written)?
-- Currently, the list of all goals, hashmap, etc. Will all be taken care of by main(). Is this optimal?
-    - Should another function take care of it? Should another class?
+- How do I most optimally implement all the information for the tree? How would I neatly initialise all the specific stat numbers, or the names?
+- How do I most optimally implement the hash numbers? I find it hard to hash when splitting across five trees (especially as the GoalsList class implements hash numbers on a tree-by-tree basis, as seen in line ~47)
