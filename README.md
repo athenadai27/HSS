@@ -30,8 +30,8 @@ GoalsDictionary Class:
 - Contains a pointer to the goal dictionary
 
 TO IMPLEMENT:
-- Overall goal tree (list of all goals)
-- Win clause (what makes the player win?)
+- Complete GoalsDictionary
+- Function that will semi-randomly generate a character's goals
 
 QUESTIONS:
 - How do I most optimally implement all the information for the tree? How would I neatly initialise all the specific stat numbers, or the names?
