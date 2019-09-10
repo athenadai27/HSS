@@ -5,6 +5,7 @@ CHANGES:
 - Implemented overall "Game" function that initialises all others
 - Actively established '5' as the "golden number"
 - Began implementation of Goal Dictionary; split it into 5 separate binary trees, all handling different categories
+- Changed GoalsList from "previous" and "next" pointers to "left" and "right"
 
 DESCRIPTIONS OF CLASSES:
 
@@ -23,7 +24,7 @@ Goal Class:
 - One single goal
 - Has a series of stat requirements that must be met
 - Has a hash number for easier finding
-- Has a previous goal pointer and a next goal pointer
+- Has a left goal pointer and a right goal pointer
 
 GoalsDictionary Class:
 - Contains a pointer to the main character
