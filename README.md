@@ -1,32 +1,52 @@
 # HSS
 HSS Game Prot
 
-Overall Plan:
-Student has a list of 5 stats and a list of x Goals (will change over time as goals are met or not met). One will complete tasks that increase certain stats, to better complete certain goals.
+CHANGES:
+- Made GoalList a public derived class of GoalDictionary
+- Replaced Goal class' tree with vectors instead
+- Implemented goalMap using set <string name, Goal*>
+- Removed "g_num" (number of goals) variable
+- Created "DayNightCycle" class
+- Created "Game" class
+
+DESCRIPTIONS OF CLASSES:
 
 Student Class:
-- Has a list of 5 stats that can be increased or decreased
-- Has a list of goals that can be added to or removed
-- Has a hashmap of goals for easier finding
+- Has a list of 5 stats
+- Has a list of goals
+- Checks to see if certain goals are passed
 
 StatList Class:
 - Contains a list of the students' stats
+- de/increments the values of the students' goals
 
-GoalsList Class:
-- Contains a list of goals
-
-Goals Class:
+Goal Class:
 - One single goal
 - Has a series of stat requirements that must be met
-- Has a hash number for easier finding
-- Has a previous goal pointer and a next goal pointer
+- Has a string name
+- Contains a vector of children goals
+
+GoalsDictionary Class:
+- Contains a root goal
+- Contains a goal map for easier finding
+- Can retrieve the root and specific goals
+
+GoalsList Class:
+- Performs just as GoalsDictionary class does, with the addendum of the ability to delete goals
+
+DayNightCycle Class:
+- Keeps track of the actions remaining in one unit of time
+
+Game Class:
+- Contains a character class
+- Contains a goal dictionary class
 
 TO IMPLEMENT:
-- Overall goal tree (list of all goals)
-- Win clause (what makes the player win?)
+- Function to implement a smaller-scale Goal Dictionary
+- Function that will semi-randomly generate a character's goals
+- Function to "gamify"; accepts user inputs and changes systems/classes accordingly
 
 QUESTIONS:
-- Is the current setup the most optimal?
-    - Can/should the Goals class be a subclass/struct of GoalsList (much like how StatList was written)?
-- Currently, the list of all goals, hashmap, etc. Will all be taken care of by main(). Is this optimal?
-    - Should another function take care of it? Should another class?
+- Where should I initialise the Goal Dictionary?
+- Is this more optimal than trees?
+- What actions should be delegated to the Game Class?
